@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #000;
+}
+.crud {
+  width: 80%;
+  margin: auto;
+}
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #123;
+  margin: 4px 0;
+  border-radius: 4px;
+  padding: 4px;
+}
+input:hover {
+  background-color: #ffffff55;
+}
+input:focus {
+  background-color: #0481ff;
+  transform: scale(1.1);
+}
+.price input {
+  width: 20%;
+}
+.price #total {
+  background-color: #0481ff;
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+#total::before {
+  content: "Total:";
+}
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: #0481ff;
+  border-radius: 20px;
+}
+button:hover {
+  cursor: pointer;
+  letter-spacing: 1px;
+  transform: scale(1-1);
+  transition: 0.4s;
+}
+button:focus {
+  background-color: #a00;
+}
+
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.btnSearch button {
+  width: 45%;
+}
+table {
+  width: 100%;
+  min-width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+  text-align: center;
+  margin: 10px 0;
+}
+th,
+td {
+  padding: 5px;
+}
+#deleteAll {
+  margin: 20px 0;
+}
+@media (max-width: 767px) {
+  .crud {
+    width: 95%;
+  }
+
+  input {
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .price input {
+    width: 40%;
+    margin: 2px 1%;
+  }
+
+  .btnSearch {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btnSearch button {
+    width: 100%;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  /* حل مشكلة الجدول */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .crud {
+    width: 90%;
+  }
+
+  .price input {
+    width: 20%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
