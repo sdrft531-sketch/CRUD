@@ -87,7 +87,7 @@ td {
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .crud {
-    width: 90%;
+    width: 97%;
   }
 
   .price input {
@@ -101,7 +101,7 @@ td {
 
 @media (max-width: 600px) {
   .crud {
-    width: 95%;
+    width: 97%;
   }
 
   input {
