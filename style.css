@@ -32,7 +32,6 @@ input:hover {
 }
 input:focus {
   background-color: #0481ff;
-  transform: scale(1.1);
 }
 .price input {
   width: 20%;
@@ -55,7 +54,7 @@ button {
 button:hover {
   cursor: pointer;
   letter-spacing: 1px;
-  transform: scale(1-1);
+
   transition: 0.4s;
 }
 button:focus {
@@ -95,7 +94,7 @@ td {
   }
 
   table {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
