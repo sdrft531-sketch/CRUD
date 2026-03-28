@@ -85,7 +85,21 @@ td {
 #deleteAll {
   margin: 20px 0;
 }
-@media (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 1024px) {
+  .crud {
+    width: 90%;
+  }
+
+  .price input {
+    width: 20%;
+  }
+
+  table {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
   .crud {
     width: 95%;
   }
@@ -110,7 +124,7 @@ td {
   }
 
   table {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   /* حل مشكلة الجدول */
@@ -118,18 +132,5 @@ td {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .crud {
-    width: 90%;
-  }
-
-  .price input {
-    width: 20%;
-  }
-
-  table {
-    font-size: 14px;
   }
 }
